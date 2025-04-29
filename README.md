@@ -1,1 +1,1 @@
-# Nested-Atoms-Model-NAM-
+# Nested Atoms Model (NAM)
