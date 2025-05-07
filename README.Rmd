@@ -7,7 +7,8 @@ output:
 
 ```{r setup, include=FALSE}
 library(formatR)
-knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 70), tidy = TRUE)
+knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(fig.align = "center", fig.width=8, fig.height=6, out.width="100%")
 ```
 
 ## Decsription of Functions

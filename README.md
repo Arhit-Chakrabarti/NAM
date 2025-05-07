@@ -50,7 +50,7 @@ visualized as:
 Data$plot_x
 ```
 
-![](README_files/figure-gfm/plot_x-1.png)<!-- -->
+<img src="README_files/figure-gfm/plot_x-1.png" width="100%" style="display: block; margin: auto;" />
 
 The plot of the observation-level variables (dimensions 1 and 2)
 segregated by group-clusters can be visualized as:
@@ -59,7 +59,7 @@ segregated by group-clusters can be visualized as:
 Data$plot_y
 ```
 
-![](README_files/figure-gfm/plot_y-1.png)<!-- -->
+<img src="README_files/figure-gfm/plot_y-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## Function to implement CAVI
 
@@ -118,9 +118,10 @@ ARI_OC = 0
 for (j in 1:length(OC)) {
     ARI_OC[j] = aricode::ARI(Data$z_true[[j]], OC[[j]])
 }
-# This is the combined observational-level clustering which accounts
-# for sharing of clusters across the groups
-ARI_OC_global = aricode::ARI(as.vector(unlist(Data$z_true)), Out_NAM_VI_MultiRun_Parallel$z.estimated)
+# This is the combined observational-level clustering which
+# accounts for sharing of clusters across the groups
+ARI_OC_global = aricode::ARI(as.vector(unlist(Data$z_true)),
+    Out_NAM_VI_MultiRun_Parallel$z.estimated)
 ```
 
 The clustering accuracies are summarized as:
@@ -150,7 +151,7 @@ estimated group-level clusters can be visualized as:
 Plots$plot_x.est
 ```
 
-![](README_files/figure-gfm/plot_x_estimated-1.png)<!-- -->
+<img src="README_files/figure-gfm/plot_x_estimated-1.png" width="100%" style="display: block; margin: auto;" />
 
 The plot of the observation-level variables (dimensions 1 and 2)
 segregated by estimated group-level clusters and by estimated
@@ -160,4 +161,4 @@ observational-level clusters can be visualized as:
 Plots$plot_y.est
 ```
 
-![](README_files/figure-gfm/plot_y_estimated-1.png)<!-- -->
+<img src="README_files/figure-gfm/plot_y_estimated-1.png" width="100%" style="display: block; margin: auto;" />
